@@ -155,12 +155,13 @@ const Banner = () => {
         }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* <div className="absolute inset-0 bg-black/60"></div> */}
+        <div className="absolute top-1/2 left-0 w-full h-32 bg-black/60 transform -translate-y-1/2"></div>
         
         {/* Banner Content */}
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-6">
-            <h1 className="text-white text-4xl font-bold">
+            <h1 className="text-white text-5xl font-bold">
               {bannerData.title.replace(/"/g, '')}
             </h1>
           </div>
@@ -168,15 +169,16 @@ const Banner = () => {
       </section>
 
       {/* Content Section */}
-      <section className="py-16">
+      <section className="py-16 mb-0">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left Column - Image */}
             <div className="w-full lg:w-1/2">
               <img
-                src={`http://localhost:5000/${bannerData.backgroundImage.replace('\\', '/')}`}
+                // src={`http://localhost:5000/${bannerData.backgroundImage.replace('\\', '/')}`}
+                src="/Left-content-about-us.jpg"
                 alt="About Us"
-                className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                className="w-full h-[330px] object-cover rounded-lg shadow-md"
               />
             </div>
 

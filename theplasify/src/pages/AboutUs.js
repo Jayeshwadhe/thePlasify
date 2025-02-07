@@ -20,10 +20,7 @@
 //     fetchFeatures();
 //   }, []);
 
-
-
 //   console.log(features);
-  
 
 //   return (
 //     <>
@@ -41,7 +38,7 @@
 //                   <div className="mb-4">
 //                     <img
 //                       // src={`http://localhost:5000/${feature.icon}`} // Add base URL for images
-//                       src={`http://localhost:5000/${feature.icon.replace(/\\/g, '/')}`} 
+//                       src={`http://localhost:5000/${feature.icon.replace(/\\/g, '/')}`}
 //                       alt={feature.title}
 //                       className="w-16 h-16 mx-auto"
 //                     />
@@ -70,106 +67,14 @@
 
 // export default AboutUs;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React, { useState, useEffect } from 'react';
-import Banner from '../components/Banner';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import Banner from "../components/Banner";
+import axios from "axios";
 
 const AboutUs = () => {
   const [features, setFeatures] = useState([]);
-  const API_URL = 'http://localhost:5000/api/about-us/getAll';
-  const BASE_URL = 'http://localhost:5000';
+  const API_URL = "http://localhost:5000/api/about-us/getAll";
+  const BASE_URL = "http://localhost:5000";
 
   useEffect(() => {
     const fetchFeatures = async () => {
@@ -177,23 +82,23 @@ const AboutUs = () => {
         const response = await axios.get(API_URL);
         setFeatures(response.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
     fetchFeatures();
   }, []);
 
   const getImageUrl = (iconPath) => {
-    if (!iconPath) return '';
-    
+    if (!iconPath) return "";
+
     // Remove "uploads\\" and replace backslashes with forward slashes
-    const cleanPath = iconPath.replace('uploads\\', '').replace('\\', '/');
+    const cleanPath = iconPath.replace("uploads\\", "").replace("\\", "/");
     const finalUrl = `${BASE_URL}/uploads/${cleanPath}`;
-    
+
     // Log for debugging
-    console.log('Original path:', iconPath);
-    console.log('Final URL:', finalUrl);
-    
+    console.log("Original path:", iconPath);
+    console.log("Final URL:", finalUrl);
+
     return finalUrl;
   };
 
@@ -215,13 +120,15 @@ const AboutUs = () => {
                       alt={feature.title}
                       className="max-h-16 w-auto object-contain"
                       onError={(e) => {
-                        console.error('Image failed to load:', e.target.src);
+                        console.error("Image failed to load:", e.target.src);
                         // Log the attempted URL when image fails to load
-                        console.log('Failed URL:', e.target.src);
+                        console.log("Failed URL:", e.target.src);
                       }}
                     />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    {feature.title}
+                  </h3>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                     {feature.description}
                   </p>
@@ -230,14 +137,13 @@ const AboutUs = () => {
             </div>
           </div>
         </section> 
-        <section className="bg-[#00BFB3] text-white text-center py-8 ">
-        <p className="text-lg font-medium max-w-4xl mx-auto height-32">
+      </div>
+      <section className="bg-[#00BFB3] text-white text-center w-[90%] mx-auto py-16">
+        <p className="text-3xl font-semibold max-w-4xl mx-auto leading-relaxed">
           Theplacify demonstrates its commitment to quality and cost, not just by{' '}
           <span className="font-bold italic">"words"</span>, but by actions and results.
         </p>
       </section>
-      </div>
-     
     </>
   );
 };
