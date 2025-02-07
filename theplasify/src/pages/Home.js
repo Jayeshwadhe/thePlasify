@@ -4,24 +4,31 @@ import FeaturesSection from '../components/FeaturesSection';
 import BusinessSection from '../components/BusinessSection';
 import TabSection from '../components/TabSection';
 import InfoSection from '../components/InfoSection';
+import ServiceTabs from '../components/ServiceTab';
 
 function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen px-16 bg-gray-300">
       <HeroSlider />
       <FeaturesSection />
       <BusinessSection />
       <FeaturesSection />
-      <TabSection/>
+     <ServiceTabs/>
       <InfoSection/>
       <section className="relative">
       {/* Background Image Section */}
       <div
         className="relative bg-cover bg-center h-80 flex items-center justify-center"
         style={{
-          backgroundImage: `url('https://softstandard.com/wp-content/uploads/2016/05/handshake-background.jpg')`, // Replace with your actual background image URL
+          backgroundImage: `url('https://softstandard.com/wp-content/uploads/slider/cache/c99bca0e32fd024351cf908220716264/hand.jpg')`, // Replace with your actual background image URL
         }}
       >
+
+{/* 
+https://softstandard.com/wp-content/uploads/2016/05/handshake-background.jpg */}
+
+
+
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark Overlay */}
         <div className="relative z-10 text-center text-white px-4">
           <h3 className="text-lg uppercase font-semibold mb-4 tracking-wide">

@@ -36,7 +36,7 @@ app.use('/api/tabs', tabRoutes);
 app.use('/api/about-us', aboutUsRoutes);
 app.use('/api/banner', bannerRoutes);
 app.use('/api/products', productRoutes);
-app.use('/api/carears', carearRoutes);
+app.use('/api/careers', carearRoutes);
 app.use('/api/blog', blogRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/application', applicationRoutes);
