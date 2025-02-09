@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TabSection from '../components/TabSection';
 import axios from 'axios';
+import ProductTab from '../components/ProductTab';
 
 function Products() {
   const [products, setProducts] = useState([]); // State to hold products data
@@ -82,7 +83,8 @@ function Products() {
       </section>
 
       {/* Tab Section */}
-      <TabSection />
+      {/* <TabSection /> */}
+      <ProductTab/>
 
       {/* Commitment Section */}
       <div className="bg-[#00BFB3] text-white text-center py-8">

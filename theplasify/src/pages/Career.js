@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Career() {
   const [careerData, setCareerData] = useState(null); // State to hold career data
-  const API_URL = "http://localhost:5000/api/carears/getAll";
+  const API_URL = "http://localhost:5000/api/careers/getAll";
 
   useEffect(() => {
     const fetchCareerData = async () => {
