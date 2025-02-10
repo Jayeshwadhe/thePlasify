@@ -146,7 +146,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="w-full px-8">
+    <div className="w-full px-20">
       {/* Banner Section */}
       <section 
         className="relative h-[300px] bg-cover bg-center"

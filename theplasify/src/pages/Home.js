@@ -15,11 +15,10 @@ function Home() {
       <FeaturesSection />
       <ServiceTabs/>
       <InfoSection/>
-<<<<<<< HEAD
-      <section className="relative"> 
-=======
+
+
       <section className="relative px-16">
->>>>>>> 4205cdf (fix bug css in home page)
+
       {/* Background Image Section */}
       <div
         className="relative bg-cover bg-center h-80 flex items-center justify-center"

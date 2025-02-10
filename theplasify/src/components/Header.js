@@ -211,6 +211,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import NavLogo from '../assest/logo.png'
 import axios from 'axios';
 
 function Header() {
@@ -289,9 +290,9 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src={`http://localhost:5000${headerData.logo || '/default-logo.png'}`}
+              src={NavLogo}
               alt="SoftStandard Solutions"
-              className="h-16 w-auto"
+              className="h-28 w-32"
             />
           </Link>
 
