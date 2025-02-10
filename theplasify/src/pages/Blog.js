@@ -156,7 +156,7 @@ const BlogCard = () => {
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="relative h-48 bg-gray-800">
             <img 
-              src="/api/placeholder/800/400"
+              src="https://softstandard.com/wp-content/uploads/2016/05/ipad.jpg"
               alt="Blog header"
               className="w-full h-full object-cover opacity-50"
             />

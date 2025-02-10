@@ -223,6 +223,8 @@ function Header() {
     const fetchHeaderData = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/headers/getAll');
+        console.log(response);
+        
         if (response.data && response.data.length > 0) {
           setHeaderData(response.data[0]);
         }
@@ -245,7 +247,7 @@ function Header() {
   }
 
   return (
-    <header className="w-full relative z-50 px-20">
+    <header className="w-full relative z-50 px-20 bg-[#f1f1f1]">
       {/* Top Bar */}
       <div className="bg-[#00BFB3] text-white py-2">
         <div className="w-[90%] mx-auto flex justify-end items-center space-x-6">
@@ -302,6 +304,9 @@ function Header() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
+            </Link>  
+            <Link to="/" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
+             Home
             </Link>
             <Link to="/about-us" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
               About us
