@@ -24,11 +24,11 @@ const ServiceSection = ({
 
           {/* Right Column - Content */}
           <div className="w-full lg:w-1/2 space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800">
+            <h2 className="text-3xl font-semibold text-gray-800">
               {title}
             </h2>
             
-            <p className="text-[#00BFB3] text-lg font-medium">
+            <p className="text-[#00BFB3] text-lg font-normal">
               {subtitle}
             </p>
 

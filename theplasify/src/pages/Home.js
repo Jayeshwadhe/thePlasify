@@ -13,9 +13,9 @@ function Home() {
       <FeaturesSection />
       <BusinessSection />
       <FeaturesSection />
-     <ServiceTabs/>
+      <ServiceTabs/>
       <InfoSection/>
-      <section className="relative">
+      <section className="relative"> 
       {/* Background Image Section */}
       <div
         className="relative bg-cover bg-center h-80 flex items-center justify-center"

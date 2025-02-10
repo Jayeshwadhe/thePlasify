@@ -138,68 +138,76 @@ Our strategic planning expertise, innovative visualization technologies; patent-
   const currentContent = currentMainTab.subTabs[activeSubTab].content;
 
   return (
-    <div className="w-full px-16">
-      {/* Main Tabs */}
-      <div className="grid grid-cols-4 text-center">
-        {tabsData.mainTabs.map((tab, index) => (
-          <div
-            key={index}
-            onClick={() => {
-              setActiveMainTab(index);
-              setActiveSubTab(0); // Reset sub-tab when main tab changes
-            }}
-            className={`py-4 px-2 cursor-pointer transition-colors ${index === activeMainTab
-                ? 'bg-[#00BFB3] text-white'
-                : 'bg-[#00BFB3] text-white opacity-90 hover:opacity-100'
-              }`}
-          >
-            {tab.name}
+    <><div className="w-full px-16">
+    {/* Main Tabs */}
+    <div className="grid grid-cols-4 text-center">
+      {tabsData.mainTabs.map((tab, index) => (
+        <div
+          key={index}
+          onClick={() => {
+            setActiveMainTab(index);
+            setActiveSubTab(0); // Reset sub-tab when main tab changes
+          }}
+          className={`py-4 px-2 cursor-pointer transition-colors ${index === activeMainTab
+              ? 'bg-[#00BFB3] text-white'
+              : 'bg-[#00BFB3] text-white opacity-90 hover:opacity-100'
+            }`}
+        >
+          {tab.name}
+        </div>
+      ))}
+    </div>
+
+    {/* Sub Tabs */}
+    <div className="grid grid-cols-4 text-center border-b">
+      {currentMainTab.subTabs.map((subTab, index) => (
+        <div
+          key={index}
+          onClick={() => setActiveSubTab(index)}
+          className={`py-4 px-2 cursor-pointer transition-colors ${index === activeSubTab
+              ? 'bg-[#00BFB3] text-white'
+              : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+            }`}
+        >
+          {subTab.name}
+        </div>
+      ))}
+    </div>
+
+    {/* Content Section */}
+    <section className="py-16">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          {/* Left Column - Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src={currentContent.image}
+              alt={`${currentMainTab.subTabs[activeSubTab].name} illustration`}
+              className="w-full h-[400px] object-cover rounded-lg shadow-md"
+            />
           </div>
-        ))}
-      </div>
 
-      {/* Sub Tabs */}
-      <div className="grid grid-cols-4 text-center border-b">
-        {currentMainTab.subTabs.map((subTab, index) => (
-          <div
-            key={index}
-            onClick={() => setActiveSubTab(index)}
-            className={`py-4 px-2 cursor-pointer transition-colors ${index === activeSubTab
-                ? 'bg-[#00BFB3] text-white'
-                : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-              }`}
-          >
-            {subTab.name}
-          </div>
-        ))}
-      </div>
-
-      {/* Content Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-            {/* Left Column - Image */}
-            <div className="w-full lg:w-1/2">
-              <img
-                src={currentContent.image}
-                alt={`${currentMainTab.subTabs[activeSubTab].name} illustration`}
-                className="w-full h-[400px] object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            {/* Right Column - Content */}
-            <div className="w-full lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-gray-800">
-                {currentMainTab.subTabs[activeSubTab].name}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {currentContent.description}
-              </p>
-            </div>
+          {/* Right Column - Content */}
+          <div className="w-full lg:w-1/2 space-y-6">
+            <h2 className="text-2xl font-semibold text-gray-800">
+              {currentMainTab.subTabs[activeSubTab].name}
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              {currentContent.description}
+            </p>
           </div>
         </div>
+      </div>
+    </section>
+  </div>
+  <section className="bg-[#00BFB3] text-white text-center w-[95%] mx-auto py-14">
+        <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
+          Theplacify demonstrates its commitment to quality and cost, not just by{' '}
+          <span className="font-bold italic">"words"</span>, but by actions and results.
+        </p>
       </section>
-    </div>
+  </>
+    
   );
 };
 
