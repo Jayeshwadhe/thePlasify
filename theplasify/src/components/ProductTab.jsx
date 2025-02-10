@@ -8,19 +8,19 @@ const ProductTab = () => {
       id: 'define',
       title: 'Define the task',
       content: 'We first seek to understand your requirements and then advise you and provide costs on the best solution possible for website design, ecommerce development, search engine optimization or internet advertising.',
-      image: '/api/placeholder/600/400'
+      image: 'https://softstandard.com/wp-content/uploads/2016/05/products_define-task.jpg'
     },
     {
       id: 'create',
       title: 'Create the solution',
       content: 'Our team works diligently to create customized solutions that perfectly match your requirements, ensuring optimal performance and user experience.',
-      image: '/api/placeholder/600/400'
+      image: 'https://softstandard.com/wp-content/uploads/2016/05/products_create-the-solutions.jpg'
     },
     {
       id: 'support',
       title: 'Support the client',
       content: 'We provide ongoing support and maintenance to ensure your solution continues to perform at its best, with regular updates and improvements.',
-      image: '/api/placeholder/600/400'
+      image: 'https://softstandard.com/wp-content/uploads/2016/05/products_support-the-client.jpg'
     }
   ];
 
