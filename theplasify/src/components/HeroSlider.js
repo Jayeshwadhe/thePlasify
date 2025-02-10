@@ -150,7 +150,7 @@ function HeroSlider() {
   };
 
   return (
-    <div className="relative w-[90%] mx-auto h-[600px] overflow-hidden rounded-lg shadow-lg my-6">
+    <div className="relative w-[90%] mx-auto h-[600px] overflow-hidden  shadow-lg my-6">
       {slides.map((slide, index) => (
         <div
           key={slide._id}
@@ -166,7 +166,7 @@ function HeroSlider() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40">
-            <div className="container mx-auto h-full flex items-center px-16">
+            <div className="container mx-auto h-full flex items-center ">
               <div
                 className={`max-w-3xl text-white transition-transform duration-1000 ${
                   index === currentSlide ? 'translate-x-0' : '-translate-x-full'

@@ -244,7 +244,7 @@ function Header() {
   }
 
   return (
-    <header className="w-full relative z-50 px-8">
+    <header className="w-full relative z-50 px-20">
       {/* Top Bar */}
       <div className="bg-[#00BFB3] text-white py-2">
         <div className="w-[90%] mx-auto flex justify-end items-center space-x-6">

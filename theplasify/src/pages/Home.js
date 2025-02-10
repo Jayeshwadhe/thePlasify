@@ -8,14 +8,18 @@ import ServiceTabs from '../components/ServiceTab';
 
 function Home() {
   return (
-    <main className="min-h-screen px-16 bg-gray-300">
+    <main className="min-h-screen px-4 bg-gray-300">
       <HeroSlider />
       <FeaturesSection />
       <BusinessSection />
       <FeaturesSection />
       <ServiceTabs/>
       <InfoSection/>
+<<<<<<< HEAD
       <section className="relative"> 
+=======
+      <section className="relative px-16">
+>>>>>>> 4205cdf (fix bug css in home page)
       {/* Background Image Section */}
       <div
         className="relative bg-cover bg-center h-80 flex items-center justify-center"
@@ -29,7 +33,7 @@ https://softstandard.com/wp-content/uploads/2016/05/handshake-background.jpg */}
 
 
 
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50 px-8"></div> {/* Dark Overlay */}
         <div className="relative z-10 text-center text-white px-4">
           <h3 className="text-lg uppercase font-semibold mb-4 tracking-wide">
             What People Say
