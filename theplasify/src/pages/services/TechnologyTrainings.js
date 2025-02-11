@@ -197,9 +197,11 @@ const TechnologyTrainings = () => {
   };
 
   return (
-    <>
-      <div className="bg-white px-8 w-[100%] mx-auto">
-        <div className="relative h-72 bg-gray-200">
+   <div className="px-20 bg-[#f1f1f1]">
+    
+    
+    <div className=" w-[100%] mx-auto ">
+        <div className="relative h-72 bg-white">
           <img
             src={staticData.header.image}
             alt={staticData.header.title}
@@ -211,7 +213,7 @@ const TechnologyTrainings = () => {
             </h1>
           </div>
         </div>
-        <div className="p-6 md:flex">
+        <div className="p-6 md:flex bg-white">
           <div className="md:w-1/3">
             <img
               src={staticData.content.image}
@@ -244,13 +246,19 @@ const TechnologyTrainings = () => {
       <TechnologyTabs/>
 
       {/* Commitment Section */}
-      <div className="bg-[#00BFB3] text-white text-center w-[90%] mx-auto py-16">
+      <div className="">
+      <div className="bg-[#00BFB3] text-white text-center w-[100%] mx-auto py-16">
         <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
           Theplacify demonstrates its commitment to quality and cost, not just by{' '}
           <span className="font-bold italic">"words"</span>, but by actions and results.
         </p>
       </div>
-    </>
+      </div>  
+
+
+
+
+   </div>
   );
 };
 

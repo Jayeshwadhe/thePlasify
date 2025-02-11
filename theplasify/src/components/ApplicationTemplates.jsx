@@ -354,7 +354,7 @@ const ServicePageTemplate = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       {/* Tabs Navigation */}
       <div className="flex text-center">
         {tabsData.map((tab, index) => (

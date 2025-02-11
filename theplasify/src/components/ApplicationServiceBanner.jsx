@@ -3,7 +3,7 @@ import BannerImg from "../assest/ApplicationServices.jpg";
 
 const ApplicationServicesBanner = () => {
   return (
-    <div className="relative w-full h-72 overflow-hidden ">
+    <div className="relative w-full h-72 overflow-hidden bg-white">
       {/* Background image */}
       <img 
         src={BannerImg}

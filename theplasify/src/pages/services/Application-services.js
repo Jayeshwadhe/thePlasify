@@ -37,7 +37,7 @@ const ApplicationServices = () => {
 
     return (
         <>
-            <div className='px-8'>
+            <div className='px-20 bg-[#f1f1f1]'>
                 <ApplicationServicesBanner />
 
                 <ApplicationServicesComp />

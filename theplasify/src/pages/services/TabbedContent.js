@@ -370,7 +370,7 @@ const TechnologyTabs = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       {/* Tab Navigation */}
       <div className="grid grid-cols-4 text-center">
         {tabsData.flat().map((tab) => (

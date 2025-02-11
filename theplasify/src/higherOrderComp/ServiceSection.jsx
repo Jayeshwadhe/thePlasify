@@ -10,7 +10,7 @@ const ServiceSection = ({
   imageAlt = "Service Image"
 }) => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Left Column - Image */}

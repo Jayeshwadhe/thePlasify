@@ -8,7 +8,7 @@ import ServiceTabs from '../components/ServiceTab';
 
 function Home() {
   return (
-    <main className="min-h-screen px-4 bg-gray-300">
+    <main className="min-h-screen px-4 bg-[#f1f1f1]">
       <HeroSlider />
       <FeaturesSection />
       <BusinessSection />

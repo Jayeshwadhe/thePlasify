@@ -113,7 +113,7 @@ Soft Standard Services is well equipped to understand, anticipate and respond to
   };
 
   return (
-    <div className="px-8">
+    <div className="px-20 bg-[#f1f1f1]">
       <div className="bg-white shadow-md overflow-hidden">
         <div className="relative h-72 bg-gray-200">
           <img
