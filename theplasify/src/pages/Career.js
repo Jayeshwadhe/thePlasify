@@ -490,7 +490,7 @@ function Career() {
           </div>
         </div>
         {/* Commitment Section */}
-      <div className="bg-[#00BFB3] w-[87.5%] mx-auto text-white text-center py-16">
+      <div className="bg-[#00BFB3] w-[97%] mx-auto text-white text-center py-16">
         <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
           Theplacify demonstrates its commitment to quality and cost, not just
           by <span className="font-bold italic">“words”</span>, but by actions
