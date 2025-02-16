@@ -252,13 +252,13 @@ function Header() {
       <div className="bg-[#00BFB3] text-white py-2">
         <div className="w-[90%] mx-auto flex justify-end items-center space-x-6">
           <div className="flex items-center">
-            <span className="text-sm">Toll Free: {headerData.tollFree || '(877) 288 - 9718 ($$$)'}</span>
+            <span className="text-sm">Toll Free:  +442039899999</span>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm">Follow us :</span>
             <div className="flex space-x-3">
               <a
-                href={headerData.socialLinks?.facebook || '#'}
+                href='https://www.facebook.com/profile.php?id=61571433044193'
                 className="hover:opacity-80 transition-opacity"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -274,7 +274,7 @@ function Header() {
                 <FaTwitter size={14} />
               </a> */}
               <a
-                href={headerData.socialLinks?.linkedin || '#'}
+                href='https://www.linkedin.com/in/shubham-raikwar-61a901244'
                 className="hover:opacity-80 transition-opacity"
                 target="_blank"
                 rel="noopener noreferrer"

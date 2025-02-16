@@ -125,7 +125,7 @@ function ContactUs() {
               />
               <h3 className="text-lg font-semibold mt-2">Fax</h3>
               <div className="mt-4 text-left">
-                <h4 className="font-bold">Fax:</h4>
+                <h4 className="font-bold">Email:</h4>
                 <p>{fax}</p>
               </div>
             </div>
