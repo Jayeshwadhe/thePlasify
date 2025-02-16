@@ -71,32 +71,32 @@ function Footer() {
               <h3 className="text-lg font-bold mb-6">OUTSOURCING SERVICES</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     Application Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     System Software
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     Application Migration & Re-Engineering
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     Application Maintenance
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     Application Renovation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 ">
                     Dedicated Development Lab
                   </Link>
                 </li>
@@ -114,14 +114,14 @@ function Footer() {
                 </li>
                 <li className="flex items-center gap-2">
                   <a href=" placify.com" className="text-[#00BFB3] hover:underline">
-                     Theplacify.com
+                  info@theplacify.com
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://facebook.com" className="text-[#00BFB3] hover:underline">
                     Facebook
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="http://www.linkedin.com/in/shubham-raikwar-61a901244" className="text-[#00BFB3] hover:underline">
                     Linkedin
@@ -132,11 +132,11 @@ function Footer() {
                     Facebook
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://www.facebook.com/profile.php?id=61571433044193" className="text-[#00BFB3] hover:underline">
                     Google+
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -144,7 +144,7 @@ function Footer() {
         <div className="border-t border-gray-800">
           <div className="container mx-auto px-4 py-4">
             <p className="text-center text-gray-400">
-              All rights Reserved © 2016 <Link to="/Theplacify.com" className="text-[#00BFB3] hover:underline">Theplacify</Link>
+              All rights Reserved © 2025 <Link to="/Theplacify.com" className="text-[#00BFB3] hover:underline">Theplacify</Link>
             </p>
           </div>
         </div>

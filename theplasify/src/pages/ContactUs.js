@@ -119,11 +119,12 @@ function ContactUs() {
             {/* Fax Section */}
             <div>
               <img
-                src="https://softstandard.com/wp-content/uploads/2016/05/icon3.jpg"
+                // src="https://softstandard.com/wp-content/uploads/2016/05/icon3.jpg"
+                src="data:image/png;base64,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"
                 alt="Fax"
                 className="mx-auto w-20 h-20"
               />
-              <h3 className="text-lg font-semibold mt-2">Fax</h3>
+              <h3 className="text-lg font-semibold mt-2">Email</h3>
               <div className="mt-4 text-left">
                 <h4 className="font-bold">Email:</h4>
                 <p>{fax}</p>

@@ -154,7 +154,7 @@ const JobDetails = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto  py-8">
         <div className="text-center">Loading...</div>
       </div>
     );
@@ -169,18 +169,19 @@ const JobDetails = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+   <div className='px-20 bg-[#f1f1f1]'>
+     <div className="container mx-auto  py-8 bg-white">
       {/* Back Button */}
       <button 
         onClick={() => navigate('/career')}
-        className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-6"
+        className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-6 "
       >
         <ArrowLeft size={20} />
         Back to Jobs
       </button>
 
       {/* Job Details Section */}
-      <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+      <div className=" rounded-lg shadow-md p-6 mb-8 px-4">
         <h1 className="text-3xl font-bold mb-4">{job.title}</h1>
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div>
@@ -284,6 +285,7 @@ const JobDetails = () => {
         </form>
       </div>
     </div>
+   </div>
   );
 };
 
