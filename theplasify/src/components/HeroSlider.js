@@ -150,7 +150,8 @@ function HeroSlider() {
   };
 
   return (
-    <div className="relative w-[90%] mx-auto h-[600px] overflow-hidden  shadow-lg my-6">
+    <div className=''>
+    <div className="relative w-[90%] mx-auto h-[600px] overflow-hidden  shadow-lg ">
       {slides.map((slide, index) => (
         <div
           key={slide._id}
@@ -215,6 +216,7 @@ function HeroSlider() {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 }

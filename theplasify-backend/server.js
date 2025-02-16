@@ -17,6 +17,8 @@ const carearRoutes = require('./src/component/carear/careerRoutes');
 const blogRoutes = require('./src/component/blog/blogRoutes');
 const contactRoutes = require('./src/component/contacts/contactRoutes');
 const applicationRoutes = require('./src/component/services/allRoutes');
+const  jobRoutes = require('./src/component/career/routes/jobRoutes')
+const applicationsRoutes = require('./src/component/career/routes/applicationRoutes')
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
@@ -34,9 +36,11 @@ app.use('/api/features', featureRoutes);
 app.use('/api/businessSection', businessSectionRoutes);
 app.use('/api/tabs', tabRoutes);
 app.use('/api/about-us', aboutUsRoutes);
-app.use('/api/banner', bannerRoutes);
+app.use('/api/banner', bannerRoutes); 
 app.use('/api/products', productRoutes);
 app.use('/api/careers', carearRoutes);
+app.use('/api/job', jobRoutes);
+app.use('./api/applicationsroutes', applicationsRoutes);
 app.use('/api/blog', blogRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/application', applicationRoutes);

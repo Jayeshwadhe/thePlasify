@@ -363,7 +363,7 @@ const ServicePageTemplate = () => {
             onClick={() => setActiveTab(index)}
             className={`flex-1 py-4 cursor-pointer transition-colors ${
               index === activeTab 
-                ? 'bg-[#00BFB3] text-white' 
+                ? 'bg-[#00BFB3] text-white text-xl' 
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >

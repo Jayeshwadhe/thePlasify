@@ -22,7 +22,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/application-services" className="text-gray-300 hover:text-[#00BFB3]">
                     Services
                   </Link>
                 </li>
@@ -44,22 +44,22 @@ function Footer() {
               <h3 className="text-lg font-bold mb-6">SERVICES</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/services/application" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/application-services" className="text-gray-300 hover:text-[#00BFB3]">
                     Application Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/business" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/business-services" className="text-gray-300 hover:text-[#00BFB3]">
                     Business Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/training" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/technology-trainings" className="text-gray-300 hover:text-[#00BFB3]">
                     Technology Trainings
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/staffing" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/globalStaffing" className="text-gray-300 hover:text-[#00BFB3]">
                     Global Staffing
                   </Link>
                 </li>
@@ -71,32 +71,32 @@ function Footer() {
               <h3 className="text-lg font-bold mb-6">OUTSOURCING SERVICES</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/services/app-development" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     Application Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/system-software" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     System Software
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/migration" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     Application Migration & Re-Engineering
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/maintenance" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     Application Maintenance
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/renovation" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     Application Renovation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/development-lab" className="text-gray-300 hover:text-[#00BFB3]">
+                  <Link to="/" className="text-gray-300 hover:text-[#00BFB3]">
                     Dedicated Development Lab
                   </Link>
                 </li>
@@ -113,8 +113,8 @@ function Footer() {
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <a href="tel:Info@the Theplacify.com" className="text-[#00BFB3] hover:underline">
-                    Info@the Theplacify.com
+                  <a href=" placify.com" className="text-[#00BFB3] hover:underline">
+                     Theplacify.com
                   </a>
                 </li>
                 <li>
@@ -144,7 +144,7 @@ function Footer() {
         <div className="border-t border-gray-800">
           <div className="container mx-auto px-4 py-4">
             <p className="text-center text-gray-400">
-              All rights Reserved © 2016 <Link to="/" className="text-[#00BFB3] hover:underline">the Theplacify</Link>
+              All rights Reserved © 2016 <Link to="/Theplacify.com" className="text-[#00BFB3] hover:underline">Theplacify</Link>
             </p>
           </div>
         </div>

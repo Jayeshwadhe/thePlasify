@@ -192,14 +192,14 @@ const ServiceTabs = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto py-4">
+    <div className="max-w-6xl mx-auto py-4  ">
       {/* Tabs */}
-      <div className="grid grid-cols-4 gap-0">
+      <div className="grid grid-cols-4 gap-0 ">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`py-3 px-4 text-center transition-colors duration-200
+            className={`py-3 px-4 text-center text-xl transition-colors duration-200
               ${tab.id === activeTab 
                 ? 'bg-teal-500 text-white' 
                 : 'bg-gray-100 text-gray-700 hover:bg-teal-100'}`}

@@ -9,8 +9,11 @@ function GlobalStaffing() {
     { name: "Specialties we service" },
   ];
   return (
-    <>
-    <div className="container w-full mx-auto ">
+   <div className="px-20 bg-[#f1f1f1]">
+    
+
+
+    <div className="container w-full mx-auto bg-white ">
       {/* Header Section */}
       <div
         className="relative h-72 bg-cover bg-center"
@@ -142,14 +145,14 @@ function GlobalStaffing() {
       </div>
     </div>
 
-    <div className="container px-4 py-8 w-[90%] mx-auto">
+    <div className="container  py-8 w-[100%] mx-auto">
       {/* Tabs Section */}
       <div className="flex border-b border-gray-200">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             onClick={() => setActiveTab(tab.name)}
-            className={`px-6 py-3 text-sm font-medium ${
+            className={`px-6 py-3 text-xl font-medium ${
               activeTab === tab.name
                 ? "text-white bg-teal-500"
                 : "text-gray-800 bg-gray-100"
@@ -184,14 +187,21 @@ function GlobalStaffing() {
       </div>
     </div>
 
-     <div className="bg-[#00BFB3] text-white text-center w-[90%] mx-auto py-16">
+     <div className="bg-[#00BFB3] text-white text-center w-[100%] mx-auto py-16">
      <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
        Theplacify demonstrates its commitment to quality and cost, not
        just by <span className="font-bold italic">“words”</span>, but by
        actions and results.
      </p>
+   </div>  
+
+
+
+
+
+
+
    </div>
-   </>
   );
 }
 

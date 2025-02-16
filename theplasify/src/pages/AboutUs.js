@@ -120,7 +120,7 @@ const AboutUs = () => {
                     <img
                       src={getImageUrl(feature.icon)}
                       alt={feature.title}
-                      className="max-h-16 w-auto object-contain"
+                      className="max-h-24 w-24 object-contain"
                       onError={(e) => {
                         console.error("Image failed to load:", e.target.src);
                         // Log the attempted URL when image fails to load

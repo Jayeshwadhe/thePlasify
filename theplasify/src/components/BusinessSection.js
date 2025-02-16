@@ -52,7 +52,7 @@ function BusinessSection() {
               <div className="w-full sm:w-1/2 lg:w-1/2 px-4">
                 <ul className="list-none space-y-3 ml-5">
                   {skillsLeft.map((skill, index) => (
-                    <li key={index} className="text-[#00BFB3] text-sm hover:underline">
+                    <li key={index} className="text-[#00BFB3] text-base ">
                       » {skill}
                     </li>
                   ))}
@@ -62,7 +62,7 @@ function BusinessSection() {
               <div className="w-full sm:w-1/2 lg:w-1/2 px-4">
                 <ul className="list-none space-y-3 ml-5">
                   {skillsRight.map((skill, index) => (
-                    <li key={index} className="text-[#00BFB3] text-sm hover:underline">
+                    <li key={index} className="text-[#00BFB3] text-base">
                       » {skill}
                     </li>
                   ))}

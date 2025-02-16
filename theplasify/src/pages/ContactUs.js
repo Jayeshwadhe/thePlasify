@@ -28,10 +28,13 @@ function ContactUs() {
   const { header, addresses, phones, fax } = contactData;
 
   return (
-    <>
-      <div className="bg-gray-100 min-h-screen">
+    <div className="px-20 bg-[#f1f1f1]">
+
+
+
+      <div className="bg-white min-h-screen ">
         {/* Header Section */}
-        <div className="relative h-64 bg-gray-900 text-white">
+        {/* <div className="relative h-64 bg-gray-900 text-white">
           <img
             src={`http://localhost:5000/${header.image.replace("\\", "/")}`} // Header image URL
             alt="Contact Background"
@@ -39,6 +42,20 @@ function ContactUs() {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-4xl font-bold">{header.title}</h1>
+          </div>
+        </div> */}
+
+        <div
+          className="relative w-[100%] mx-auto h-72 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('http://localhost:5000/${header.image.replace("\\", "/")}')`,
+          }}
+        >
+          <div className="absolute top-1/2 left-0 w-full h-32 bg-black/60 transform -translate-y-1/2 flex items-center justify-start pl-11">
+            <h1 className="text-white text-5xl font-bold">
+              {/* {careerData.title.replace(/"/g, "")} */}
+              Contact US
+            </h1>
           </div>
         </div>
 
@@ -59,7 +76,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="bg-gray-100 min-h-screen py-10">
+      <div className="bg-white min-h-screen py-10">
         <div className="max-w-7xl mx-auto px-4">
           {/* Image Section with Content */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-10">
@@ -151,15 +168,169 @@ function ContactUs() {
       </div>
 
       {/* Commitment Section */}
-      <div className="bg-[#00BFB3] text-white text-center py-8">
+      {/* <div className="bg-[#00BFB3] text-white text-center py-8">
         <p className="text-lg font-medium max-w-4xl mx-auto">
           Theplacify demonstrates its commitment to quality and cost, not
           just by <span className="font-bold italic">“words”</span>, but by
           actions and results.
         </p>
+      </div> */}
+      <div className="bg-[#00BFB3] text-white text-center  py-16">
+        <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
+          Theplacify demonstrates its commitment to quality and cost, not
+          just by <span className="font-bold italic">“words”</span>, but by
+          actions and results.
+        </p>
       </div>
-    </>
+
+    </div>
   );
 }
 
 export default ContactUs;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

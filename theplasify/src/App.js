@@ -14,7 +14,8 @@ import TechnologyTrainings from './pages/services/TechnologyTrainings';
 import GlobalStaffing from './pages/services/GlobalStaffing';
 import StaffAugmentation from './pages/services/Staff-augmentation';
 import AdminDashboard from './AdminDashboard/AdminDashboard';
-
+import JobListing from './components/career/JobListing';
+import JobDetails from './components/career/JobDetails';
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
                   <Route path="/products" element={<Products />} />
                   <Route path="/career" element={<Career />} />
                   <Route path="/blog" element={<Blog />} />
+                  <Route path="/job/:id" element={<JobDetails/>}/>
                   <Route path="/contact-us" element={<ContactUs />} />
                 </Routes>
               </div>

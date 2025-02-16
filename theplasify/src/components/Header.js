@@ -265,14 +265,14 @@ function Header() {
               >
                 <FaFacebookF size={14} />
               </a>
-              <a
+              {/* <a
                 href={headerData.socialLinks?.twitter || '#'}
                 className="hover:opacity-80 transition-opacity"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTwitter size={14} />
-              </a>
+              </a> */}
               <a
                 href={headerData.socialLinks?.linkedin || '#'}
                 className="hover:opacity-80 transition-opacity"
@@ -287,14 +287,14 @@ function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="border-b shadow-sm">
-        <div className="w-[90%] mx-auto flex justify-between items-center py-4">
+      <div className="border-b shadow-sm bg-white" style={{marginBottom:'-25px'}}>
+        <div className="w-[90%] mx-auto flex justify-between items-center ">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src={NavLogo}
               alt="SoftStandard Solutions"
-              className="h-28 w-32"
+              className="h-48 w-52"
             />
           </Link>
 
@@ -328,9 +328,9 @@ function Header() {
                 <Link to="/globalStaffing" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
                   Global Staffing
                 </Link>
-                <Link to="/staffAugmentation" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
+                {/* <Link to="/staffAugmentation" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
                   Staff Augmentation
-                </Link>
+                </Link> */}
               </div>
             </div>
             <Link to="/products" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
@@ -339,9 +339,9 @@ function Header() {
             <Link to="/career" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
               Career
             </Link>
-            <Link to="/blog" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
+            {/* <Link to="/blog" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
               Blog
-            </Link>
+            </Link> */}
             <Link to="/contact-us" className="text-gray-600 hover:text-[#00BFB3] transition-colors">
               Contact us
             </Link>

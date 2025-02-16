@@ -53,7 +53,7 @@ function InfoSection() {
                     href={card.link}
                     className="text-[#00BFB3] hover:text-[#008F86] font-medium"
                   >
-                    READ MORE →
+                    {/* READ MORE → */}
                   </a>
                 </div>
               </div>

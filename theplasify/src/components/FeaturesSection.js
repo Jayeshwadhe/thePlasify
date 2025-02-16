@@ -31,7 +31,8 @@ function FeaturesSection() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+  <div className='px-16'>
+      <div className="container mx-auto  py-12 bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature) => (
           <FeatureCard
@@ -43,6 +44,7 @@ function FeaturesSection() {
         ))}
       </div>
     </div>
+  </div>
   );
 }
 
@@ -57,8 +59,8 @@ function FeatureCard({ title, description, bgImage }) {
     >
       <div className="bg-black bg-opacity-50 absolute inset-0 flex flex-col justify-between p-4">
         <div>
-          <h2 className="text-sm font-bold">{title}</h2>
-          <p className="text-xs">{description}</p>
+          <h2 className="text-lg font-bold">{title}</h2>
+          <p className="text-sm">{description}</p>
         </div>
         <div className="mt-auto">
           <button className="text-xs font-bold text-[#00BFB3] hover:text-[#008F86]">

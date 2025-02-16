@@ -132,6 +132,7 @@
 
 import React, { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
+import BannerBlog from '../components/BannerBlog';
 
 const BlogCard = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -152,37 +153,60 @@ const BlogCard = () => {
   return (
     <div className="max-w-4xl mx-auto p-4">
       {!showDetails ? (
-        // Blog Card View
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="relative h-48 bg-gray-800">
-            <img 
-              src="https://softstandard.com/wp-content/uploads/2016/05/ipad.jpg"
-              alt="Blog header"
-              className="w-full h-full object-cover opacity-50"
-            />
-          </div>
-          <div className="p-6">
-            <h2 className="text-2xl font-bold mb-3">{blogData.title}</h2>
-            <p className="text-gray-600 mb-4">{blogData.shortDescription}</p>
-            <div className="flex items-center justify-between text-sm text-gray-500">
-              <div className="flex space-x-4">
-                <span>By {blogData.author}</span>
-                <span>{blogData.date}</span>
-                <span>{blogData.category}</span>
+
+
+
+
+        <>
+
+          <BannerBlog />
+        {/* // Blog Card View */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative h-48 bg-gray-800">
+              <img
+                src="https://softstandard.com/wp-content/uploads/2016/05/ipad.jpg"
+                alt="Blog header"
+                className="w-full h-full object-cover opacity-50"
+              />
+            </div>
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-3">{blogData.title}</h2>
+              <p className="text-gray-600 mb-4">{blogData.shortDescription}</p>
+              <div className="flex items-center justify-between text-sm text-gray-500">
+                <div className="flex space-x-4">
+                  <span>By {blogData.author}</span>
+                  <span>{blogData.date}</span>
+                  <span>{blogData.category}</span>
+                </div>
+                <button
+                  onClick={() => setShowDetails(true)}
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Read More →
+                </button>
               </div>
-              <button 
-                onClick={() => setShowDetails(true)}
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
-                Read More →
-              </button>
             </div>
           </div>
-        </div>
+
+        </>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       ) : (
         // Detailed View
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <button 
+          <button
             onClick={() => setShowDetails(false)}
             className="flex items-center text-blue-600 hover:text-blue-800 mb-4"
           >
