@@ -153,7 +153,7 @@ const ServiceTabs = () => {
   const content = {
     application: {
       title: 'Application Services',
-      description: `SoftStandard Solutions is a leading consulting in Application Services. 
+      description: `Theplacify Solutions is a leading consulting in Application Services. 
       We provide comprehensive application development, maintenance, and modernization services. 
       Our team of experts delivers innovative solutions tailored to your business needs, 
       ensuring optimal performance and scalability. We specialize in custom software development, 
@@ -162,8 +162,8 @@ const ServiceTabs = () => {
     },
     business: {
       title: 'Business Services',
-      description: `SoftStandard Solutions is a leading consulting in Business services.
-      Soft Standard Services is well equipped to understand, anticipate and respond to your evolving staffing needs. 
+      description: `Theplacify Solutions is a leading consulting in Business services.
+      Theplacify  Services is well equipped to understand, anticipate and respond to your evolving staffing needs. 
       We are constantly developing and optimizing innovative staffing solutions to help you weather economic fluctuations, 
       control costs and improve productivity. Our unique strengths and extensive experience will benefit your business 
       wherever it operates around the globe. You'll find that your worldwide staffing success is not just our 

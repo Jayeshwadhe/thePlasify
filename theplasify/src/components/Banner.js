@@ -193,7 +193,7 @@ const Banner = () => {
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                SoftStandard Solutions offers a broad range of IT services such as global IT staffing, 
+              Theplacify Solutions offers a broad range of IT services such as global IT staffing, 
                 professional consulting, systems analysis & development, systems integration, and 
                 support or application maintenance services. With solid, broad-based experience, 
                 we are confident in our ability to help our customers grow and improve their businesses. 

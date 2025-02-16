@@ -96,11 +96,11 @@ const BusinessServices = () => {
         "https://softstandard.com/wp-content/uploads/2016/05/Business-Services.jpg",
     },
     content: {
-      title: "SoftStandard Solutions Business Services",
+      title: "Theplacify Solutions Business Services",
       image:
         "https://softstandard.com/wp-content/uploads/2016/05/business-service-main-page-banner.jpg",
-      description: `SoftStandard Solutions is a leading consulting in Business services.
-Soft Standard Services is well equipped to understand, anticipate and respond to your evolving staffing needs. We are constantly developing and optimizing innovative staffing solutions to help you weather economic fluctuations, control costs and improve productivity. Our unique strengths and extensive experience will benefit your business wherever it operates around the globe. You’ll find that your worldwide staffing success is not just our business – it is our promise.`,
+      description: `Theplacify Solutions is a leading consulting in Business services.
+Theplacify Services is well equipped to understand, anticipate and respond to your evolving staffing needs. We are constantly developing and optimizing innovative staffing solutions to help you weather economic fluctuations, control costs and improve productivity. Our unique strengths and extensive experience will benefit your business wherever it operates around the globe. You’ll find that your worldwide staffing success is not just our business – it is our promise.`,
     },
     features: [
       "Strategic Business Planning and Consultation",

@@ -403,9 +403,9 @@ function Career() {
                   {/* {section.title} */}
                   Theplacify
                 </h2>
-                <p className="text-[#00BFB3] text-2xl font-normal mt-4"> {"Soft Standard Provides Opportunity"}</p>
+                <p className="text-[#00BFB3] text-2xl font-normal mt-4"> {"Theplacify Provides Opportunity"}</p>
                 <p className="text-gray-700 mt-4">
-                {"Theplacify provides a unique experience for consultants and contractors alike. Apart from care and feeding, we maintain the standard of our internal and field staff and provide opportunities that are unmatched by most IT Staffing and Services companies. Theplacify successfully delivers a wide array of solutions to our client base and our team members are able to gain experience and training not typically acquired from other firms. At Soft Standard, we are committed to train and teach you the skills necessary to prepare you for your next role."}
+                {"Theplacify provides a unique experience for consultants and contractors alike. Apart from care and feeding, we maintain the standard of our internal and field staff and provide opportunities that are unmatched by most IT Staffing and Services companies. Theplacify successfully delivers a wide array of solutions to our client base and our team members are able to gain experience and training not typically acquired from other firms. At Theplacify, we are committed to train and teach you the skills necessary to prepare you for your next role."}
                 </p> {/* Replace this API {section.content} with the hard content */}
               </div>
             </div>
@@ -462,12 +462,12 @@ function Career() {
   
 
       {/* Jobs Section */}
-      <div className="bg-gray-100 pt-10 pb-0 mb-0">
+      <div className="bg-gray-100 pt-10 pb-0 mb-0 px-16">
         <div className="max-w-6xl pl-5 mb-8 mx-auto px-4">
           <h2 className="text-lg font-semibold text-gray-800 mb-6">
             Current Job Openings
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 ">
             <JobListing/>
             {/* {careerData.jobs.map((job, index) => (
               <div

@@ -33,7 +33,7 @@ function GlobalStaffing() {
         <div className="pl-10">
           <img
             src="/global-stafing-main-page-banner.jpg" //  Replacement of CDN Link and this image is stored in the public folder
-            alt="SoftStandard Solutions"
+            alt="Theplacify Solutions"
             className="rounded-sm shadow-md w-[90%]"
           />
         </div>
@@ -41,15 +41,15 @@ function GlobalStaffing() {
         {/* Right Content */}
         <div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            SoftStandard Solutions Business Services
+          Theplacify Solutions Business Services
           </h2>
           <p className="text-[#00BFB3] font-semibold mb-4">
-            SoftStandard Solutions is a leader in STAFFING Solutions servicing various clients across the globe.
+          Theplacify Solutions is a leader in STAFFING Solutions servicing various clients across the globe.
           </p>
           <p className="text-gray-700 mb-4">
             As the business landscape continues to rapidly evolve, so do your workforce needs. With this in mind,
-            SoftStandard aims to gather in-depth comprehension of your business requirements and staffing needs in
-            order to source top talent for your team. As your comprehensive recruiting partner, SoftStandard delivers
+            Theplacify aims to gather in-depth comprehension of your business requirements and staffing needs in
+            order to source top talent for your team. As your comprehensive recruiting partner, Theplacify delivers
             an array of flexible, end-to-end talent solutions within a number of industries.
           </p>
           <p className="text-gray-700 mb-4">
@@ -179,7 +179,7 @@ function GlobalStaffing() {
           <h2 className="text-xl font-bold text-gray-800 mb-4">{activeTab}</h2>
           <p className="text-gray-700">
             When you need to supplement your core team of employees, an
-            individual or team of consultants can be hired through SoftStandard
+            individual or team of consultants can be hired through Theplacify
             on an hourly basis to execute critical projects and optimize
             workforce performance.
           </p>
