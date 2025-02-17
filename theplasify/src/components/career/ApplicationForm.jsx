@@ -19,7 +19,7 @@ const ApplicationForm = ({ jobId }) => {
       formDataToSend.append('jobId', jobId);
   
       try {
-        await axios.post('http://localhost:5000/api/applications', formDataToSend, {
+        await axios.post('http://localhost:5000/api/applicationsroutes/add', formDataToSend, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
