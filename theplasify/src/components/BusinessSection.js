@@ -9,7 +9,7 @@ function BusinessSection() {
   useEffect(() => {
     const fetchBusinessSection = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/businessSection/getAll');
+        const response = await axios.get('https://api.theplacify.com/api/businessSection/getAll');
         setSection(response.data[0]); // Assuming there's only one section returned
         setLoading(false);
       } catch (err) {
@@ -33,7 +33,7 @@ function BusinessSection() {
   const { title, description, skillsHeading, skillsLeft, skillsRight } = section;
 
   return (
-    <div className='px-16'>
+    <div className=' px-0 lg:px-16'>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           {/* Title Section */}

@@ -268,7 +268,7 @@ const ProductTab = () => {
 
 
   return (
-    <div className="max-w-6xl bg-gray-100 w-[80%] mx-auto pb-2 mb-20 rounded-sm">
+    <div className="max-w-6xl bg-gray-100 w-[100%] mx-auto pb-2 mb-20 rounded-sm">
       {/* Tab Headers with Top Decorative Line */}
       <div className="relative w-full">
         <div className="absolute top-0 left-0 w-full h-[3px] bg-teal-500 rounded-lg"></div> {/* Decorative Line */}

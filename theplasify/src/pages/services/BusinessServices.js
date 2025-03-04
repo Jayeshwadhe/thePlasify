@@ -1,119 +1,148 @@
-// import React, { useEffect, useState } from 'react';
+
+// import React from "react";
+// import FullTimeImg from "../../assest/fulltime.jpg";
+// import SustainabilityPillars from "../../components/SustainPiller";
 
 // const BusinessServices = () => {
-//   const [businessData, setBusinessData] = useState(null);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     // Fetch data from the API
-//     const fetchBusinessData = async () => {
-//       try {
-//         const response = await fetch('http://localhost:5000/api/application/business/getAll');
-//         if (!response.ok) {
-//           throw new Error('Failed to fetch data');
-//         }
-//         const data = await response.json();
-//         setBusinessData(data[0]); // Assuming the API returns an array with one object
-//       } catch (err) {
-//         setError(err.message);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchBusinessData();
-//   }, []);
-
-//   if (loading) {
-//     return <div>Loading...</div>;
-//   }
-
-//   if (error) {
-//     return <div>Error: {error}</div>;
-//   }
-
-//   // Prepend the server URL to image paths
-//   const headerImageUrl = `http://localhost:5000/${businessData.header.image.replace(/\\/g, '/')}`;
-//   const contentImageUrl = `http://localhost:5000/${businessData.content.image.replace(/\\/g, '/')}`;
+//   // Static data object to replace API data
+//   const staticData = {
+//     header: {
+//       title: "Full-Time Jobs",
+//       image:
+//       FullTimeImg,
+//     },
+//     content: {
+//       title: "Theplacify Solutions Business Services",
+//       image:
+//         "https://softstandard.com/wp-content/uploads/2016/05/business-service-main-page-banner.jpg",
+//       description: `Theplacify Solutions is a leading consulting in Business services.
+// Theplacify Services is well equipped to understand, anticipate and respond to your evolving staffing needs. We are constantly developing and optimizing innovative staffing solutions to help you weather economic fluctuations, control costs and improve productivity. Our unique strengths and extensive experience will benefit your business wherever it operates around the globe. You’ll find that your worldwide staffing success is not just our business – it is our promise.`,
+//     },
+//     features: [
+//       "Strategic Business Planning and Consultation",
+//       "Process Optimization and Efficiency Improvement",
+//       "Risk Management and Compliance Solutions",
+//       "Digital Transformation Services",
+//       "Market Analysis and Growth Strategies",
+//       "Financial Planning and Advisory Services",
+//     ],
+//   };
 
 //   return (
-//     <>
-//       <div className="bg-white shadow-md rounded-lg overflow-hidden">
-//         <div className="relative h-64 bg-gray-200">
+//     <div className="px-0 lg:px-20 bg-[#f1f1f1]">
+//       <div className="bg-white shadow-md overflow-hidden">
+//         <div className="relative h-72 bg-gray-200">
 //           <img
-//             src={headerImageUrl} // Corrected dynamic header image URL
-//             alt={businessData.header.title}
+//             src={staticData.header.image}
+//             alt={staticData.header.title}
 //             className="w-full h-full object-cover"
 //           />
-//           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-//             <h1 className="text-white text-3xl md:text-5xl font-bold">{businessData.header.title}</h1>
+//           {/* Dark overlay fix */}
+//           <div className="absolute top-1/2 left-0 w-full h-32 bg-black/60 transform -translate-y-1/2 flex items-center justify-start pl-11">
+//             <h1 className="text-white text-3xl md:text-5xl font-bold">
+//               {staticData.header.title}
+//             </h1>
 //           </div>
 //         </div>
 //         <div className="p-6 md:flex">
 //           <div className="md:w-1/3">
 //             <img
-//               src={contentImageUrl} // Corrected dynamic content image URL
-//               alt={businessData.content.title}
+//               src={staticData.content.image}
+//               alt={staticData.content.title}
 //               className="rounded-md shadow-md mb-4 md:mb-0"
 //             />
 //           </div>
 //           <div className="md:w-2/3 md:pl-6">
-//             <h2 className="text-2xl font-bold text-gray-800">{businessData.content.title}</h2>
-//             <p className="mt-4 text-gray-600">
-//               <strong>Theplacify Solutions</strong> is a leading consulting in Business services.
+//             <h2 className="text-2xl font-normal text-gray-950">
+//               {staticData.content.title}
+//             </h2>
+//             <p className="mt-4 text-[#00BFB3]">
+//               <strong>Theplacify Solutions</strong> is a leading consulting in
+//               Business services.
 //             </p>
-//             <p className="mt-4 text-gray-600">{businessData.content.description}</p>
+//             <p className="mt-4 text-gray-600">
+//               {staticData.content.description}
+//             </p>
 //             <ul className="mt-4 text-gray-600 list-disc list-inside">
-//               {businessData.features.map((feature, index) => (
-//                 <li key={index}>{feature}</li> // Render dynamic features
+//               {staticData.features.map((feature, index) => (
+//                 <li key={index} className="mb-2">
+//                   {feature}
+//                 </li>
 //               ))}
 //             </ul>
 //           </div>
 //         </div>
 //       </div>
+
 //       {/* Commitment Section */}
-//       <div className="bg-[#00BFB3] text-white text-center py-8">
-//         <p className="text-lg font-medium max-w-4xl mx-auto">
-//           Theplacify demonstrates its commitment to quality and cost, not just by{' '}
-//           <span className="font-bold italic">“words”</span>, but by actions and results.
-//         </p>
-//       </div>
-//     </>
+     
+//       <SustainabilityPillars/>
+//     </div>
 //   );
 // };
 
 // export default BusinessServices;
 
-import React from "react";
 
-const BusinessServices = () => {
-  // Static data object to replace API data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import FullTimeImg from "../../assest/fulltime.jpg";
+import SustainabilityPillars from "../../components/SustainPiller";
+import FullTimeImg1 from '../../assest/full1.jpg';
+
+const FullTimeJobs = () => {
+  // Static data object for Full-Time Jobs
   const staticData = {
     header: {
-      title: "Business Services",
-      image:
-        "https://softstandard.com/wp-content/uploads/2016/05/Business-Services.jpg",
+      title: "Full-Time Jobs",
+      image: FullTimeImg,
     },
     content: {
-      title: "Theplacify Solutions Business Services",
+      title: "ThePlacify - Secure Your Future with Full-Time Opportunities",
       image:
-        "https://softstandard.com/wp-content/uploads/2016/05/business-service-main-page-banner.jpg",
-      description: `Theplacify Solutions is a leading consulting in Business services.
-Theplacify Services is well equipped to understand, anticipate and respond to your evolving staffing needs. We are constantly developing and optimizing innovative staffing solutions to help you weather economic fluctuations, control costs and improve productivity. Our unique strengths and extensive experience will benefit your business wherever it operates around the globe. You’ll find that your worldwide staffing success is not just our business – it is our promise.`,
+       FullTimeImg1, // Replace with actual image URL
+      description: `At ThePlacify, we specialize in connecting talented individuals with rewarding full-time job opportunities. Whether you're starting your career, looking for a job change, or seeking stability in your professional journey, we provide tailored job listings to match your skills and goals.
+
+Our full-time jobs span various industries, including IT, healthcare, finance, marketing, and more. We ensure that you get the best opportunities with long-term benefits, job security, and career growth prospects.`,
     },
     features: [
-      "Strategic Business Planning and Consultation",
-      "Process Optimization and Efficiency Improvement",
-      "Risk Management and Compliance Solutions",
-      "Digital Transformation Services",
-      "Market Analysis and Growth Strategies",
-      "Financial Planning and Advisory Services",
+      "Competitive salary and benefits",
+      "Long-term job security and stability",
+      "Opportunities across diverse industries",
+      "Career growth and professional development",
+      "Work with reputable and verified employers",
+      "Easy application process with dedicated support",
     ],
   };
 
   return (
-    <div className="px-20 bg-[#f1f1f1]">
+    <div className="px-0 lg:px-20 bg-[#f1f1f1]">
       <div className="bg-white shadow-md overflow-hidden">
         <div className="relative h-72 bg-gray-200">
           <img
@@ -141,8 +170,7 @@ Theplacify Services is well equipped to understand, anticipate and respond to yo
               {staticData.content.title}
             </h2>
             <p className="mt-4 text-[#00BFB3]">
-              <strong>Theplacify Solutions</strong> is a leading consulting in
-              Business services.
+              <strong>ThePlacify</strong> - Secure your future with the right full-time job.
             </p>
             <p className="mt-4 text-gray-600">
               {staticData.content.description}
@@ -159,15 +187,9 @@ Theplacify Services is well equipped to understand, anticipate and respond to yo
       </div>
 
       {/* Commitment Section */}
-      <div className="bg-[#00BFB3] text-white text-center py-16">
-        <p className="text-3xl font-normal max-w-4xl mx-auto leading-relaxed">
-          Theplacify demonstrates its commitment to quality and cost, not just
-          by <span className="font-bold italic">"words"</span>, but by actions
-          and results.
-        </p>
-      </div>
+      <SustainabilityPillars />
     </div>
   );
 };
 
-export default BusinessServices;
+export default FullTimeJobs;

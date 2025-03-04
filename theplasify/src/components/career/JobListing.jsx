@@ -161,7 +161,7 @@ const JobListing = () => {
 
   const fetchJobs = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/job');
+      const response = await axios.get('https://api.theplacify.com/api/job');
       setJobs(response.data);
     } catch (error) {
       console.error('Error fetching jobs:', error);

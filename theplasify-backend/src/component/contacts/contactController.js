@@ -75,6 +75,67 @@ exports.createContact = async (req, res) => {
   
   
   
+
+  const nodemailer = require('nodemailer')
+
+  exports.contactController = async (req, res) => {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'aks969014@gmail.com',
+        pass: 'bdum wrys vbwn yuxq'
+      }
+    })
+
+    const { name, email, website, message } = req.body;
+    try {
+
+
+      const adminMailOptions = {
+        from: 'aks969014@gmail.com',
+        to: 'ceo@theplacify.com',
+        subject: `New Contact Form Submission from ${name}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          ${website ? `<p><strong>Website:</strong> ${website}</p>` : ''}
+          <p><strong>Message:</strong></p>
+          <p>${message}</p>
+        `
+      };
+
+      await transporter.sendMail(adminMailOptions);
+
+      // Send auto-reply
+      const autoReplyOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'Thank you for contacting us',
+        html: `
+          <h2>Thank you for reaching out!</h2>
+          <p>Dear ${name},</p>
+          <p>We have received your message and will get back to you as soon as possible.</p>
+          <p>Best regards,</p>
+          <p>The Theplacify Team</p>
+        `
+      };
+
+      await transporter.sendMail(autoReplyOptions);
+
+      res.status(200).json({
+        success: true,
+        message: 'Message sent successfully'
+      });
+
+
+
+    } catch (error) {
+      
+    }
+
+
+  }
   
   
   
@@ -126,3 +187,24 @@ exports.deleteContact = async (req, res) => {
     res.status(500).json({ message: 'Error deleting contact section', error });
   }
 };
+
+
+
+
+exports.sendMailContact = async (req, res) => {
+ 
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail', // or your preferred email service
+    auth: {
+      user: process.env.EMAIL_USER, // your email
+      pass: process.env.EMAIL_PASSWORD // your email password or app-specific password
+    }
+  });
+
+
+  const { fullName, email, phone, message } = req.body;
+
+
+
+}

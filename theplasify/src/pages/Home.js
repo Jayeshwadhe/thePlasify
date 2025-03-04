@@ -6,20 +6,22 @@ import TabSection from '../components/TabSection';
 import InfoSection from '../components/InfoSection';
 import ServiceTabs from '../components/ServiceTab';
 import FeaturesSecond from '../components/FeaturesSecond';
+import SustainabilityPillars from '../components/SustainPiller';
+
 
 function Home() {
   return (
-    <main className="min-h-screen px-4 bg-[#f1f1f1]">
+    <main className="min-h-screen  bg-[#f1f1f1] px-0 lg:px-4">
       <HeroSlider />
       <FeaturesSection />
-      <BusinessSection />
+      {/* <BusinessSection /> */}
       {/* <FeaturesSection /> */}
       <FeaturesSecond/>
       <ServiceTabs/>
       <InfoSection/>
 
 
-      <section className="relative px-16">
+      <section className="relative px-0 lg:px-16">
 
       {/* Background Image Section */}
       <div
@@ -53,13 +55,14 @@ https://softstandard.com/wp-content/uploads/2016/05/handshake-background.jpg */}
       </div>
 
       {/* Commitment Section */}
-      <div className="bg-[#00BFB3] text-white text-center py-24 ">
+      {/* <div className="bg-[#00BFB3] text-white text-center py-24 ">
         <p className="text-3xl  font-medium max-w-4xl mx-auto">
           Theplacify demonstrates its commitment to quality and cost, not
           just by <span className="font-bold italic">“words”</span>, but by
           actions and results.
         </p>
-      </div>
+      </div> */}
+      <SustainabilityPillars/>
     </section>
     </main>
   );

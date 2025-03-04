@@ -222,7 +222,7 @@ function Header() {
   useEffect(() => {
     const fetchHeaderData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/headers/getAll');
+        const response = await axios.get('https://api.theplacify.com/api/headers/getAll');
         console.log(response);
         
         if (response.data && response.data.length > 0) {
@@ -247,12 +247,12 @@ function Header() {
   }
 
   return (
-    <header className="w-full relative z-50 px-20 bg-[#f1f1f1]">
+    <header className="w-full relative z-50 px-0 lg:px-20 bg-[#f1f1f1]">
       {/* Top Bar */}
       <div className="bg-[#00BFB3] text-white py-2">
         <div className="w-[90%] mx-auto flex justify-end items-center space-x-6">
           <div className="flex items-center">
-            <span className="text-sm">Toll Free:  +442039899999</span>
+            <span className="text-sm">ContactUs:  +442039899999</span>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm">Follow us :</span>
@@ -287,8 +287,8 @@ function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="border-b shadow-sm bg-white" style={{marginBottom:'-25px'}}>
-        <div className="w-[90%] mx-auto flex justify-between items-center ">
+      <div className="border-b shadow-sm bg-white " style={{marginBottom:'-25px'}}>
+        <div className="w-[90%] mx-auto flex justify-between items-center h-44" style={{marginBottom:'-15px'}}>
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
@@ -317,13 +317,13 @@ function Header() {
               </button>
               <div className="absolute hidden group-hover:block top-full left-0 w-48 bg-white shadow-lg rounded-md py-2">
                 <Link to="/application-services" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
-                  Application Services
+                 Part-Time Jobs
                 </Link>
                 <Link to="/business-services" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
-                  Business Services
+                  {/* Business Services */}Full-Stack Jobs
                 </Link>
                 <Link to="/technology-trainings" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
-                  Technology Trainings
+                  Contract Basics
                 </Link>
                 <Link to="/globalStaffing" className="block px-4 py-2 text-gray-600 hover:text-[#00BFB3] hover:bg-gray-50">
                   Global Staffing

@@ -109,7 +109,7 @@ const JobDetails = () => {
 
   const fetchJobDetails = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/job/${id}`);
+      const response = await axios.get(`https://api.theplacify.com/api/job/${id}`);
       setJob(response.data);
       setLoading(false);
     } catch (error) {
@@ -127,7 +127,7 @@ const JobDetails = () => {
     formDataToSend.append('jobId', id);
 
     try {
-      await axios.post('http://localhost:5000/api/applications', formDataToSend, {
+      await axios.post('https://api.theplacify.com/api/applicationsroutes/add', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

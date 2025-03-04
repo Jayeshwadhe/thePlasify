@@ -12,7 +12,7 @@ const ApplicationServices = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/application/application/getAll');
+                const response = await axios.get('https://api.theplacify.com/api/application/application/getAll');
                 if (response.data.length > 0) {
                     setData(response.data[0]); // Assuming single data entry for application services
                 }
@@ -37,7 +37,7 @@ const ApplicationServices = () => {
 
     return (
         <>
-            <div className='px-20 bg-[#f1f1f1]'>
+            <div className='px-0 lg:px-20 bg-[#f1f1f1]'>
                 <ApplicationServicesBanner />
 
                 <ApplicationServicesComp />

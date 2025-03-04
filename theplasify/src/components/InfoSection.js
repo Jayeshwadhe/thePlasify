@@ -29,10 +29,10 @@ function InfoSection() {
 
 
 
-    <div className='px-16'>
+    <div className='px-0 lg:px-16'>
 
       <section
-        className="relative py-16 bg-cover bg-center px-16"
+        className="relative py-16 bg-cover bg-center "
         style={{
           backgroundImage: `url('https://softstandard.com/wp-content/uploads/2016/05/ipad.jpg')`, // Replace with your background image URL
         }}

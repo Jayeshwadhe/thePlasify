@@ -9,7 +9,7 @@ function FeaturesSection() {
   useEffect(() => {
     const fetchFeatures = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/features/getAllFeatures');
+        const response = await axios.get('https://api.theplacify.com/api/features/getAllFeatures');
         setFeatures(response.data);
         setLoading(false);
       } catch (err) {
@@ -31,15 +31,15 @@ function FeaturesSection() {
   }
 
   return (
-  <div className='px-16'>
-      <div className="container mx-auto  py-12 bg-white">
+  <div className='  lg:px-16'>
+      <div className="container mx-auto  py-12 bg-white px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature) => (
           <FeatureCard
             key={feature._id}
             title={feature.title}
             description={feature.description}
-            bgImage={`http://localhost:5000${feature.bgImage}`}
+            bgImage={`https://api.theplacify.com/${feature.bgImage}`}
           />
         ))}
       </div>

@@ -116,7 +116,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import axios from 'axios';
-
+import HomeSLider from '../assest/homeslider.jpg'
 function HeroSlider() {
   const [slides, setSlides] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -150,8 +150,8 @@ function HeroSlider() {
   };
 
   return (
-    <div className=''>
-    <div className="relative w-[90%] mx-auto h-[600px] overflow-hidden  shadow-lg ">
+    <div className=' px-0 lg:px-16'>
+    <div className="relative w-[100%] mx-auto h-[600px] overflow-hidden  shadow-lg ">
       {slides.map((slide, index) => (
         <div
           key={slide._id}
@@ -160,9 +160,10 @@ function HeroSlider() {
           }`}
         >
           <img
-            src={slide.images && slide.images.length > 0
-              ? `http://localhost:5000/${slide.images[0]}`
-              : 'http://localhost:5000/default-placeholder.png'}
+            // src={slide.images && slide.images.length > 0
+            //   ? `http://localhost:5000/${slide.images[0]}`
+            //   : {HomeSLider}}
+            src={HomeSLider}
             alt={slide.title}
             className="object-cover w-full h-full"
           />
@@ -173,11 +174,12 @@ function HeroSlider() {
                   index === currentSlide ? 'translate-x-0' : '-translate-x-full'
                 }`}
               >
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif">
-                  {slide.title || "We are Offering"}
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif text-center">
+                  {/* {slide.title || "We are Offering"} */}
+                   UK's No.1 Staffing and Recruitment company
                 </h1>
                 <p className="text-2xl md:text-3xl font-light opacity-90">
-                  {slide.description || "IT Solutions to improve and simulate your business"}
+                  {/* {slide.description || "IT Solutions to improve and simulate your business"} */}
                 </p>
               </div>
             </div>

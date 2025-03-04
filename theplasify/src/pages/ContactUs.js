@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import ContactImg from '../assest/contact1.jpg'
 
 function ContactUs() {
   const [contactData, setContactData] = useState(null);
@@ -8,7 +9,7 @@ function ContactUs() {
   useEffect(() => {
     const fetchContactData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/contact/getAll");
+        const response = await axios.get("https://api.theplacify.com/api/contact/getAll");
         if (response.data && response.data.length > 0) {
           setContactData(response.data[0]); // Assuming only one contact section exists
         }
@@ -28,27 +29,19 @@ function ContactUs() {
   const { header, addresses, phones, fax } = contactData;
 
   return (
-    <div className="px-20 bg-[#f1f1f1]">
+    <div className="px-0 lg:px-20 bg-[#f1f1f1]">
 
 
 
       <div className="bg-white min-h-screen ">
         {/* Header Section */}
-        {/* <div className="relative h-64 bg-gray-900 text-white">
-          <img
-            src={`http://localhost:5000/${header.image.replace("\\", "/")}`} // Header image URL
-            alt="Contact Background"
-            className="absolute inset-0 w-full h-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-4xl font-bold">{header.title}</h1>
-          </div>
-        </div> */}
+      
 
         <div
           className="relative w-[100%] mx-auto h-72 bg-cover bg-center"
           style={{
-            backgroundImage: `url('http://localhost:5000/${header.image.replace("\\", "/")}')`,
+            // backgroundImage: `url('https://api.theplacify.com/${header.image.replace("\\", "/")}')`,
+            backgroundImage: `url(${ContactImg})`,
           }}
         >
           <div className="absolute top-1/2 left-0 w-full h-32 bg-black/60 transform -translate-y-1/2 flex items-center justify-start pl-11">

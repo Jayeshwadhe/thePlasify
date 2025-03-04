@@ -19,9 +19,11 @@ const {
   createContact,
   updateContact,
   deleteContact,
+  contactController,
 } = require('./contactController');
 
 // CRUD Routes
+router.post('/sendmail', contactController)
 router.get('/getAll', getAllContacts); // Get all contact data
 router.get('/getById/:id', getContactById); // Get a single contact section by ID
 router.post(

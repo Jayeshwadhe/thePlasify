@@ -117,10 +117,11 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import AboutUsImg from '../assest/aboutus.jpg';
 
 const Banner = () => {
   const [bannerData, setBannerData] = useState(null);
-  const API_URL = 'http://localhost:5000/api/banner/getAll';
+  const API_URL = 'https://api.theplacify.com/api/banner/getAll';
 
   useEffect(() => {
     const fetchBanner = async () => {
@@ -136,6 +137,9 @@ const Banner = () => {
 
     fetchBanner();
   }, []);
+
+  console.log('this is the banner data',bannerData)
+
 
   if (!bannerData) {
     return (
@@ -176,7 +180,8 @@ const Banner = () => {
             <div className="w-full lg:w-1/2">
               <img
                 // src={`http://localhost:5000/${bannerData.backgroundImage.replace('\\', '/')}`}
-                src="/Left-content-about-us.jpg"
+                // src="/Left-content-about-us.jpg"
+                src={AboutUsImg}
                 alt="About Us"
                 className="w-full h-[330px] object-cover rounded-lg shadow-md"
               />
@@ -185,15 +190,17 @@ const Banner = () => {
             {/* Right Column - Content */}
             <div className="w-full lg:w-1/2 space-y-6">
               <h2 className="text-3xl font-bold text-gray-800">
-                {bannerData.subTitle.replace(/"/g, '')}
+                {/* {bannerData.subTitle.replace(/"/g, '')} */}
+                Theplacify Solutions is a leading professional staffing solutions
               </h2>
               
               <p className="text-[#00BFB3] text-lg font-medium">
-                {bannerData.description.replace(/"/g, '')}
+                {/* {bannerData.description.replace(/"/g, '')} */}
+                Theplacify Solutions is a leading recruitment Services firm
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-              Theplacify Solutions offers a broad range of IT services such as global IT staffing, 
+              Theplacify Solutions offers a broad range of professional staffing solutions such as global IT staffing, 
                 professional consulting, systems analysis & development, systems integration, and 
                 support or application maintenance services. With solid, broad-based experience, 
                 we are confident in our ability to help our customers grow and improve their businesses. 
