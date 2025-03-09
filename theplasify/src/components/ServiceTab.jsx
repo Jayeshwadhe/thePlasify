@@ -150,10 +150,11 @@
 
 import React, { useState } from 'react';
 import Pen1Img from '../assest/pen1.jpg';
-import {response} from 'express'
+
 import Pen2Img from '../assest/pen2.jpg';
 import Pen3Img from '../assest/pen3.jpg';
 import Pen4Img from '../assest/pen4.jpg';
+import { Link } from 'react-router-dom';
 const ServiceTabs = () => {
   const [activeTab, setActiveTab] = useState('application');
   
@@ -172,7 +173,8 @@ const ServiceTabs = () => {
       that require specialized skills on a part-time basis. We understand the dynamic nature of the IT industry and provide 
       solutions that allow businesses to scale their workforce according to their needs while offering job seekers 
       a chance to gain valuable industry experience and maintain work-life balance.`,
-      image: Pen1Img
+      image: Pen1Img,
+      path: '/part-time-jobs'
     },
     business: {
       title: 'Full-time Jobs',
@@ -182,7 +184,8 @@ const ServiceTabs = () => {
       only possess the necessary technical expertise but also align with a company's culture and vision. We support the 
       entire hiring process, from sourcing and screening to onboarding, ensuring a seamless experience for both employers 
       and job seekers.`,
-      image: Pen2Img
+      image: Pen2Img,
+      path: '/full-time-jobs'
     },
     technology: {
       title: 'Contract Basis',
@@ -192,7 +195,8 @@ const ServiceTabs = () => {
       time-sensitive projects without the long-term commitment of full-time hires. We handle all aspects of contract 
       employment, including payroll, compliance, and benefits, allowing businesses to focus on delivering exceptional 
       technology solutions while minimizing hiring risks.`,
-      image: Pen3Img
+      image: Pen3Img,
+      path: '/contract-jobs'
     },
     staffing: {
       title: 'Global Staffing',
@@ -202,7 +206,8 @@ const ServiceTabs = () => {
       regions, ensuring they have access to the best talent regardless of geographical boundaries. Our global recruitment 
       strategies are tailored to meet the evolving needs of multinational corporations and startups alike, offering 
       cost-effective, scalable, and reliable staffing solutions.`,
-      image: Pen4Img
+      image: Pen4Img,
+      path: '/globalStaffing'
     }
   };
 
@@ -243,9 +248,9 @@ const ServiceTabs = () => {
           <p className="text-gray-600 leading-relaxed">
             {content[activeTab]?.description}
           </p>
-          <button className="text-teal-600 font-medium hover:text-teal-700">
+          <Link className="text-teal-600 font-medium hover:text-teal-700" to={content[activeTab]?.path}>
             READ MORE →
-          </button>
+          </Link>
         </div>
       </div>
     </div>

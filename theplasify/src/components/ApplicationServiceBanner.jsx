@@ -18,7 +18,7 @@ const ApplicationServicesBanner = () => {
       {/* Content container */}
       <div className="relative h-full flex items-center justify-start px-8 md:px-16 max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-          Application Services
+          Part Time Jobs 
         </h1> 
       </div>
       

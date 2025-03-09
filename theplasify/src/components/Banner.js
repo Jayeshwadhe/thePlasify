@@ -155,7 +155,7 @@ const Banner = () => {
       <section 
         className="relative h-[300px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('http://localhost:5000/${bannerData.backgroundImage.replace('\\', '/')}')`
+          backgroundImage: `url('http://api.theplacify.com/${bannerData.backgroundImage.replace('\\', '/')}')`
         }}
       >
         {/* Dark Overlay */}

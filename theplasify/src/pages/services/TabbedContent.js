@@ -449,7 +449,165 @@
 
 
 
+// import React, { useState } from 'react';
+// import Img2 from '../../assest/contract3.jpg'
+
+// const ContractJobTabs = () => {
+//   const [activeTab, setActiveTab] = useState('requirements');
+  
+//   const tabsData = [
+//     [
+//       { id: 'requirements', label: 'Job Requirements' },
+//       { id: 'responsibilities', label: 'Responsibilities' },
+//       { id: 'benefits', label: 'Benefits' },
+//       { id: 'duration', label: 'Contract Duration' }
+//     ],
+//     [
+//       { id: 'location', label: 'Location' },
+//       { id: 'payment', label: 'Payment Terms' },
+//       // { id: 'application', label: 'How to Apply' },
+//       // { id: 'contact', label: 'Contact Info' }
+//     ]
+//   ];
+  
+//   const tabContent = {
+//     requirements: {
+//       image: "/Technology-Trainings_Bigdata-1.jpg",
+//       text: "Bachelor's degree in relevant field, 3+ years of experience in similar role, proficiency with required technologies, excellent communication skills, ability to work independently, problem-solving aptitude, and willingness to adapt to changing priorities."
+//     },
+//     responsibilities: {
+//       image: "/Technology-Trainings_Hyperion.jpg",
+//       text: "Develop and maintain client applications, collaborate with cross-functional teams, implement best practices, participate in code reviews, troubleshoot and resolve technical issues, document processes, and provide regular progress updates to stakeholders."
+//     },
+//     benefits: {
+//       image: "/Technology-Trainings_Java.jpg",
+//       text: "Competitive hourly rate, flexible working hours, remote work options, professional development opportunities, networking with industry experts, potential for contract extension or conversion to full-time, and exposure to cutting-edge technologies."
+//     },
+//     duration: {
+//       image: "/Technology-Trainings_Datawarehousing.jpg",
+//       text: "Initial 6-month contract with possibility of extension based on performance and project needs. Expected start date is immediate with a standard 40-hour work week and occasional overtime during critical project phases."
+//     },
+//     location: {
+//       image: "/Technology-Trainings_Microsoft-training.jpg",
+//       text: "Remote position with occasional on-site meetings at client location. Must be available during business hours in Eastern Time Zone (ET). Some travel may be required (approximately 10%) for key project milestones and client meetings."
+//     },
+//     payment: {
+//       image: Img2,
+//       text: "Competitive hourly rate based on experience and qualifications. Payment issued bi-weekly upon submission and approval of timesheet. All work-related expenses must be pre-approved and will be reimbursed according to company policy."
+//     },
+//     application: {
+//       image: "/Technology-Trainings_ERP.jpg",
+//       text: "Submit your resume, cover letter, and portfolio showcasing relevant work to careers@company.com. Include 'Contract Position - [Your Name]' in the subject line. Shortlisted candidates will be invited for technical assessment followed by interviews with the project team."
+//     },
+//     contact: {
+//       image: "/Technology-Trainings_ERP.jpg",
+//       text: "For questions regarding this position, please contact our HR department at hr@company.com or call (555) 123-4567 during business hours. We aim to respond to all inquiries within 48 hours."
+//     }
+//   };
+  
+//   return (
+//     <div className="w-full bg-white">
+//       {/* Tab Navigation */}
+//       <div className="grid grid-cols-4 text-center text-xl">
+//         {tabsData.flat().map((tab) => (
+//           <div
+//             key={tab.id}
+//             onClick={() => setActiveTab(tab.id)}
+//             className={`py-4 cursor-pointer transition-colors ${
+//               activeTab === tab.id
+//                 ? 'bg-[#00BFB3] text-white'
+//                 : 'bg-white text-gray-700 hover:bg-gray-100'
+//             }`}
+//           >
+//             {tab.label}
+//           </div>
+//         ))}
+//       </div>
+      
+//       {/* Content Section */}
+//       <div className="flex p-8">
+//         {/* Left Column - Image */}
+//         <div className="w-1/2 pr-8">
+//           <img
+//             src={tabContent[activeTab].image}
+//             alt={`${activeTab} illustration`}
+//             className="w-full h-[400px] object-cover"
+//           />
+//         </div>
+        
+//         {/* Right Column - Description */}
+//         <div className="w-1/2 pl-8">
+//           <p className="text-gray-700 leading-relaxed">
+//             {tabContent[activeTab].text}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContractJobTabs;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
+import Img2 from '../../assest/contract3.jpg'
 
 const ContractJobTabs = () => {
   const [activeTab, setActiveTab] = useState('requirements');
@@ -464,55 +622,55 @@ const ContractJobTabs = () => {
     [
       { id: 'location', label: 'Location' },
       { id: 'payment', label: 'Payment Terms' },
-      { id: 'application', label: 'How to Apply' },
-      { id: 'contact', label: 'Contact Info' }
+      // { id: 'application', label: 'How to Apply' },
+      // { id: 'contact', label: 'Contact Info' }
     ]
   ];
   
   const tabContent = {
     requirements: {
-      image: "/contract-job-requirements.jpg",
+      image: "/Technology-Trainings_Bigdata-1.jpg",
       text: "Bachelor's degree in relevant field, 3+ years of experience in similar role, proficiency with required technologies, excellent communication skills, ability to work independently, problem-solving aptitude, and willingness to adapt to changing priorities."
     },
     responsibilities: {
-      image: "/contract-job-responsibilities.jpg",
+      image: "/Technology-Trainings_Hyperion.jpg",
       text: "Develop and maintain client applications, collaborate with cross-functional teams, implement best practices, participate in code reviews, troubleshoot and resolve technical issues, document processes, and provide regular progress updates to stakeholders."
     },
     benefits: {
-      image: "/contract-job-benefits.jpg",
+      image: "/Technology-Trainings_Java.jpg",
       text: "Competitive hourly rate, flexible working hours, remote work options, professional development opportunities, networking with industry experts, potential for contract extension or conversion to full-time, and exposure to cutting-edge technologies."
     },
     duration: {
-      image: "/contract-job-duration.jpg",
+      image: "/Technology-Trainings_Datawarehousing.jpg",
       text: "Initial 6-month contract with possibility of extension based on performance and project needs. Expected start date is immediate with a standard 40-hour work week and occasional overtime during critical project phases."
     },
     location: {
-      image: "/contract-job-location.jpg",
+      image: "/Technology-Trainings_Microsoft-training.jpg",
       text: "Remote position with occasional on-site meetings at client location. Must be available during business hours in Eastern Time Zone (ET). Some travel may be required (approximately 10%) for key project milestones and client meetings."
     },
     payment: {
-      image: "/contract-job-payment.jpg",
+      image: Img2,
       text: "Competitive hourly rate based on experience and qualifications. Payment issued bi-weekly upon submission and approval of timesheet. All work-related expenses must be pre-approved and will be reimbursed according to company policy."
     },
     application: {
-      image: "/contract-job-application.jpg",
+      image: "/Technology-Trainings_ERP.jpg",
       text: "Submit your resume, cover letter, and portfolio showcasing relevant work to careers@company.com. Include 'Contract Position - [Your Name]' in the subject line. Shortlisted candidates will be invited for technical assessment followed by interviews with the project team."
     },
     contact: {
-      image: "/contract-job-contact.jpg",
+      image: "/Technology-Trainings_ERP.jpg",
       text: "For questions regarding this position, please contact our HR department at hr@company.com or call (555) 123-4567 during business hours. We aim to respond to all inquiries within 48 hours."
     }
   };
   
   return (
     <div className="w-full bg-white">
-      {/* Tab Navigation */}
-      <div className="grid grid-cols-4 text-center text-xl">
+      {/* Tab Navigation - Responsive grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 text-center text-base md:text-xl">
         {tabsData.flat().map((tab) => (
           <div
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`py-4 cursor-pointer transition-colors ${
+            className={`py-3 md:py-4 cursor-pointer transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#00BFB3] text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -523,19 +681,19 @@ const ContractJobTabs = () => {
         ))}
       </div>
       
-      {/* Content Section */}
-      <div className="flex p-8">
-        {/* Left Column - Image */}
-        <div className="w-1/2 pr-8">
+      {/* Content Section - Responsive flex column on mobile, row on desktop */}
+      <div className="flex flex-col md:flex-row p-4 md:p-8">
+        {/* Image - Full width on mobile, half on desktop */}
+        <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
           <img
             src={tabContent[activeTab].image}
             alt={`${activeTab} illustration`}
-            className="w-full h-[400px] object-cover"
+            className="w-full h-[300px] md:h-[400px] object-cover"
           />
         </div>
         
-        {/* Right Column - Description */}
-        <div className="w-1/2 pl-8">
+        {/* Description - Full width on mobile, half on desktop */}
+        <div className="w-full md:w-1/2 md:pl-8">
           <p className="text-gray-700 leading-relaxed">
             {tabContent[activeTab].text}
           </p>

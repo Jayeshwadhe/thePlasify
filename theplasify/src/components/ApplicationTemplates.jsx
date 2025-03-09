@@ -134,6 +134,116 @@
 
 
 
+// import React, { useState } from 'react';
+// import PartTimeImg1 from '../assest/part1.jpg';
+// import PartTimeImg2 from '../assest/part2.jpg';
+// import PartTimeImg3 from '../assest/part3.jpg';
+
+// const ServicePageTemplate = () => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   // Data structure for tabs and their content
+//   const tabsData = [
+//     {
+//       name: "Remote Part-Time Jobs",
+//       image: PartTimeImg2,
+//       description: `ThePlacify helps professionals find remote part-time jobs that fit their skills and schedule. Whether you are a student, a freelancer, or someone looking for extra income, we provide flexible job opportunities in web development, IT support, digital marketing, and more.
+
+//       Our remote jobs allow you to work from anywhere while maintaining a healthy work-life balance. Join ThePlacify today and explore exciting remote work opportunities with top companies.`
+//     },
+//     {
+//       name: "Freelancing Opportunities",
+//       image: PartTimeImg1,
+//       description: `Freelancing is a great way to build experience, work independently, and earn income on your terms. ThePlacify connects skilled professionals with companies looking for freelancers in fields such as web development, software testing, content writing, and UI/UX design.
+
+//       We ensure that freelancers find projects that match their expertise, helping them grow their careers while maintaining flexibility. Start your freelancing journey with ThePlacify today.`
+//     },
+//     {
+//       name: "Internship & Training Programs",
+//       image: PartTimeImg3,
+//       description: `Looking to kickstart your IT career? ThePlacify offers internship and training programs that provide hands-on experience with real-world projects. Our programs help students and freshers develop technical and soft skills needed for the industry.
+
+//       Gain valuable experience, work on live projects, and get mentorship from industry experts. Whether you're looking for short-term or long-term internships, ThePlacify has the right opportunity for you.`
+//     }
+//   ];
+
+//   return (
+//     <div className="w-full bg-white">
+//       {/* Tabs Navigation */}
+//       <div className="flex text-center">
+//         {tabsData.map((tab, index) => (
+//           <div
+//             key={index}
+//             onClick={() => setActiveTab(index)}
+//             className={`flex-1 py-4 cursor-pointer transition-colors ${
+//               index === activeTab 
+//                 ? 'bg-[#00BFB3] text-white text-xl' 
+//                 : 'bg-white text-gray-700 hover:bg-gray-100'
+//             }`}
+//           >
+//             {tab.name}
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* Content Section */}
+//       <div className="flex p-8">
+//         {/* Left Column - Image */}
+//         <div className="w-1/2 pr-8">
+//           <img
+//             src={tabsData[activeTab].image}
+//             alt={`${tabsData[activeTab].name} illustration`}
+//             className="w-full h-[500px] object-cover"
+//           />
+//         </div>
+
+//         {/* Right Column - Description */}
+//         <div className="w-1/2 pl-8">
+//           <h2 className="text-2xl font-semibold mb-4">
+//             {tabsData[activeTab].name}
+//           </h2>
+//           <p className="text-gray-600 leading-relaxed">
+//             {tabsData[activeTab].description}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ServicePageTemplate;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import PartTimeImg1 from '../assest/part1.jpg';
 import PartTimeImg2 from '../assest/part2.jpg';
@@ -141,43 +251,43 @@ import PartTimeImg3 from '../assest/part3.jpg';
 
 const ServicePageTemplate = () => {
   const [activeTab, setActiveTab] = useState(0);
-
+  
   // Data structure for tabs and their content
   const tabsData = [
     {
       name: "Remote Part-Time Jobs",
       image: PartTimeImg2,
       description: `ThePlacify helps professionals find remote part-time jobs that fit their skills and schedule. Whether you are a student, a freelancer, or someone looking for extra income, we provide flexible job opportunities in web development, IT support, digital marketing, and more.
-
+      
       Our remote jobs allow you to work from anywhere while maintaining a healthy work-life balance. Join ThePlacify today and explore exciting remote work opportunities with top companies.`
     },
     {
       name: "Freelancing Opportunities",
       image: PartTimeImg1,
       description: `Freelancing is a great way to build experience, work independently, and earn income on your terms. ThePlacify connects skilled professionals with companies looking for freelancers in fields such as web development, software testing, content writing, and UI/UX design.
-
+      
       We ensure that freelancers find projects that match their expertise, helping them grow their careers while maintaining flexibility. Start your freelancing journey with ThePlacify today.`
     },
     {
       name: "Internship & Training Programs",
       image: PartTimeImg3,
       description: `Looking to kickstart your IT career? ThePlacify offers internship and training programs that provide hands-on experience with real-world projects. Our programs help students and freshers develop technical and soft skills needed for the industry.
-
+      
       Gain valuable experience, work on live projects, and get mentorship from industry experts. Whether you're looking for short-term or long-term internships, ThePlacify has the right opportunity for you.`
     }
   ];
-
+  
   return (
     <div className="w-full bg-white">
       {/* Tabs Navigation */}
-      <div className="flex text-center">
+      <div className="flex flex-wrap text-center">
         {tabsData.map((tab, index) => (
           <div
             key={index}
             onClick={() => setActiveTab(index)}
             className={`flex-1 py-4 cursor-pointer transition-colors ${
               index === activeTab 
-                ? 'bg-[#00BFB3] text-white text-xl' 
+                ? 'bg-[#00BFB3] text-white text-xl'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >
@@ -185,20 +295,20 @@ const ServicePageTemplate = () => {
           </div>
         ))}
       </div>
-
-      {/* Content Section */}
-      <div className="flex p-8">
-        {/* Left Column - Image */}
-        <div className="w-1/2 pr-8">
+      
+      {/* Content Section - Responsive layout */}
+      <div className="flex flex-col md:flex-row p-4 md:p-8">
+        {/* Image - Full width on mobile, half on desktop */}
+        <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
           <img
             src={tabsData[activeTab].image}
             alt={`${tabsData[activeTab].name} illustration`}
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </div>
-
-        {/* Right Column - Description */}
-        <div className="w-1/2 pl-8">
+        
+        {/* Description - Full width on mobile, half on desktop */}
+        <div className="w-full md:w-1/2 md:pl-8">
           <h2 className="text-2xl font-semibold mb-4">
             {tabsData[activeTab].name}
           </h2>

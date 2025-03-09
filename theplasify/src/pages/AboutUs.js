@@ -6,8 +6,8 @@ import SustainabilityPillars from "../components/SustainPiller";
 
 const AboutUs = () => {
   const [features, setFeatures] = useState([]);
-  const API_URL = "http://localhost:5000/api/about-us/getAll";
-  const BASE_URL = "http://localhost:5000/";
+  const API_URL = "http://api.theplacify.com/api/about-us/getAll";
+  const BASE_URL = "http://api.theplacify.com/";
 
   useEffect(() => {
     const fetchFeatures = async () => {
