@@ -1,6 +1,6 @@
 import React from "react";
 import HomeImg1 from "../assest/home1.webp";
-import { response } from "express";
+//import { response } from "express";
 import HomeImg2 from "../assest/home2.webp";
 import HomeImg3 from "../assest/home3.webp";
 

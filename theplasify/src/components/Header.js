@@ -13,7 +13,7 @@ function Header() {
   useEffect(() => {
     const fetchHeaderData = async () => {
       try {
-        const response = await axios.get('https://api.theplacify.com/api/headers/getAll');
+        const response = await axios.get('https://theplacify.com/api/headers/getAll');
         console.log(response);
         
         if (response.data && response.data.length > 0) {

@@ -7,11 +7,16 @@ import InfoSection from '../components/InfoSection';
 import ServiceTabs from '../components/ServiceTab';
 import FeaturesSecond from '../components/FeaturesSecond';
 import SustainabilityPillars from '../components/SustainPiller';
+//import {Helmet} from "react-helmet";
 
 
 function Home() {
   return (
     <main className="min-h-screen  bg-[#f1f1f1] px-0 lg:px-4">
+      {/* <Helmet>
+      <title>ThePlacify - IT Recruitment & Staffing Solutions</title>
+      <meta name="description" content="ThePlacify - Premier IT recruitment agency specializing in full-time, part-time, and contract roles." />
+    </Helmet> */}
       <HeroSlider />
       <FeaturesSection />
       {/* <BusinessSection /> */}

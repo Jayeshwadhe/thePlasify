@@ -72,7 +72,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import JobListing from "../components/career/JobListing";
-import { response } from "express";
+// import { response } from "express";
 import CareerImg2 from "../assest/career1.jpg";
 import CareerImg1 from "../assest/career2.jpg";
 import CareerImg3 from "../assest/career3.jpg";
